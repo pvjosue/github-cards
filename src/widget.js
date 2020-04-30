@@ -102,6 +102,7 @@
     }
     heighty(iframe);
     card.parentNode.replaceChild(iframe, card);
+    console.log('hola' + iframe.height)
     return iframe;
   }
 

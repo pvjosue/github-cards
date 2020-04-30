@@ -118,8 +118,8 @@ var qs = querystring();
 
     return http.status != 404;
 
-}
-
+  }
+  
   function userCard(user) {
     var url = baseurl + 'users/' + user;
     request(url, function(data) {
