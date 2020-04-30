@@ -53,7 +53,7 @@
     cardurl = cardurl || client_url;
     if (!cardurl) {
       var theme = querydata(card, 'theme') || client_theme || 'default';
-      cardurl = base + 'cards/' + theme + '.html';
+      cardurl = base + 'jsdelivr/cards/' + theme + '.html';
     }
     var user = querydata(card, 'user');
     var repo = querydata(card, 'repo');
