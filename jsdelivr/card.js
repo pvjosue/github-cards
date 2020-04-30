@@ -112,8 +112,10 @@ var qs = querystring();
   function ImageExist(image_url){
 
     var http = new XMLHttpRequest();
-
     http.open('HEAD', image_url, false);
+    // http.setRequestHeader("Access-Control-Allow-Origin", "*")
+    // http.setRequestHeader("Access-Control-Allow-Headers","Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, X-GitHub-OTP, X-Requested-With")
+    // http.setRequestHeader("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE")
     http.send();
 
     return http.status != 404;
