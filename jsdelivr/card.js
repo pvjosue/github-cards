@@ -103,12 +103,22 @@ var qs = querystring();
       }, '*');
     }
   }
-  function ImageExist(url) 
+  function ImageExist2(url) 
   {
     var img = new Image();
     img.src = url;
     return img.height != 0;
   }
+  function ImageExist(image_url){
+
+    var http = new XMLHttpRequest();
+
+    http.open('HEAD', image_url, false);
+    http.send();
+
+    return http.status != 404;
+
+}
 
   function userCard(user) {
     var url = baseurl + 'users/' + user;
@@ -172,10 +182,12 @@ var qs = querystring();
       }
       // Check if there is a logo in the repo, if there isn't grab avatar image
       repo_image_url = 'https://raw.githubusercontent.com/' + user + '/' + repo + '/master/logo.jpg'
+      console.log(`${repo} Image found: ${ImageExist(repo_image_url)}`)
       if (ImageExist(repo_image_url))
       {
         data.avatar_url = repo_image_url
       }
+
       console.log(data.avatar_url)
       data.forks_count = numberic(data.forks_count) || defaults;
       data.watchers_count = numberic(data.watchers_count) || defaults;
