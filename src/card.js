@@ -190,7 +190,7 @@ var qs = querystring();
         data.avatar_url = repo_image_url
       }
 
-      console.log(data.avatar_url)
+      // console.log(data.avatar_url)
       data.forks_count = numberic(data.forks_count) || defaults;
       data.watchers_count = numberic(data.watchers_count) || defaults;
       if (data.fork) {

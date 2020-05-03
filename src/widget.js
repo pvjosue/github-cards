@@ -1,5 +1,5 @@
 (function(d) {
-    var base = "assets/github-cards/";
+    var base = "/assets/github-cards/";
   
     var i, count = 0;
   
