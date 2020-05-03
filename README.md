@@ -31,4 +31,6 @@ For example in _pages/cv.md
 You will see something similar to this in your page when using the _default_ theme:
 ![Grid of repos and user](output_example.png)
 
+[Here](https://pvjosue.github.io) you can see it in action.
+
 #### This repo was forked and modified from [github-cards](https://github.com/lepture/github-cards)
