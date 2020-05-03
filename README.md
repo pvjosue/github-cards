@@ -1,6 +1,6 @@
 # Github-cards for minimal mistakes and academic pages
 
-This repo allows for an easy integration of github-cards showing your repos or user information to your github page. 
+This repo allows an easy github-cards integration, showing your repos or user information to your github page. 
 
 ## Usage
 * Copy the full github-cards directory to your _assets_ folder (if you place it in other folder, make sure to change all text instances of _/assets/github-cards/_ to your desired path).
